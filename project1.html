@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas!</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(135deg, #1a1a1a, #330000); 
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden; 
+        }
+
+        .card {
+            background: linear-gradient(135deg, #440000, #220000); /* Darker red card */
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 600px;
+            position: relative; /* For snowflake positioning */
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #ffcccc; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .snowflake {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            animation: snowfall 5s linear infinite;
+        }
+
+        @keyframes snowfall {
+            0% { transform: translateY(-10px); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        /* Snowflake positions */
+        .snowflake:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .snowflake:nth-child(2) { top: 20%; left: 80%; animation-delay: 1s; }
+        .snowflake:nth-child(3) { top: 30%; left: 30%; animation-delay: 2s; }
+        .snowflake:nth-child(4) { top: 40%; left: 60%; animation-delay: 3s; }
+        .snowflake:nth-child(5) { top: 50%; left: 20%; animation-delay: 4s; }
+        .snowflake:nth-child(6) { top: 60%; left: 90%; animation-delay: 1.5s; }
+        .snowflake:nth-child(7) { top: 70%; left: 40%; animation-delay: 2.5s; }
+        .snowflake:nth-child(8) { top: 80%; left: 70%; animation-delay: 3.5s; }
+        .snowflake:nth-child(9) { top: 90%; left: 15%; animation-delay: 0.5s; }
+        .snowflake:nth-child(10) { top: 5%; left: 50%; animation-delay: 4.5s; }
+
+    </style>
+    
+</head>
+<body>
+    <div class="card">
+        <h1>Merry Christmas!</h1>
+        <p>Wishing you a season filled with joy, warmth, and wonderful moments with your loved ones.</p>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+    </div>
+</body>
+</html>

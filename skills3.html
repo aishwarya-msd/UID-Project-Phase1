@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px 0; /* Reduced padding for a tighter header */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px; /* Adjusted margin */
+            position: relative;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: red;
+            transform-origin: bottom center;
+            transition: transform 0.3s ease-out;
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 15px; /* Adjusted margin */
+        }
+
+        .social img {
+            width: 30px; /* Adjusted social icon size */
+            height: auto;
+            margin: 0 8px; /* Adjusted margin */
+        }
+
+        .skills-section {
+            background-color: rgb(199, 41, 41);
+            color: white;
+            padding: 60px 20px; /* Increased padding for more visual space */
+            animation: sectionSlide 1s ease-in-out;
+            transform: translateY(-50px);
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes sectionSlide {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .skills-title {
+            font-size: 4em;
+            font-weight: bold;
+            animation: titleFade 1.5s ease-in-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            margin-bottom: 40px; /* Added margin for space */
+        }
+
+        @keyframes titleFade {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 60px auto; /* Adjusted margin */
+            max-width: 1200px; /* Adjusted max width */
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            background-color: black;
+            color: white;
+            padding: 30px; /* Increased padding */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.3);
+            text-align: center;
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            border: 1px solid rgb(199, 41, 41);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 15px rgba(250, 1, 1, 0.721);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 15px; /* Adjusted margin */
+            color: rgb(199, 41, 41);
+            text-decoration: underline;
+        }
+
+        .skill-card p {
+            font-size: 1.1em; /* Adjusted font size */
+            color: #ddd;
+            line-height: 1.6; /* Improved readability */
+        }
+
+        .skill-card strong {
+            color: rgb(199, 41, 41);
+        }
+
+        footer {
+            background-color: #383535;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px; /* Added margin for space */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* Added padding to container */
+        }
+        @media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center items */
+    }
+    .service {
+        width: 90%; /* Make services take up most of the width */
+        margin-bottom: 20px; /* Add spacing between services */
+    }
+    h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    footer {
+        width: 100%;
+        margin: 60px auto 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="display: flex; align-items: center;">
+                <img src="logo1 pf.png" alt="logo" class="logo">
+                <a href="hpahe1.html">Home</a>
+                <a href="skills3.html">Skills</a>
+                <a href="projectpage.html">Projects</a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="https://th.bing.com/th/id/OIP.wtda3Y9BS3lB7UbY5UFZjQHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Facebook"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn.pixabay.com/photo/2017/08/23/11/30/twitter-2672572_1280.jpg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/_.aish_w_arya/" target="_blank"><img src="https://www.nicepng.com/png/full/432-4329510_instagram-logo-logos-de-redes-sociales-instagram.png" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="skills-section">
+        <div class="skills-title">Skills</div>
+    </div>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Academics</h3>
+            <p>I am studious and very much passionate about learning new things.</p>
+            <p><strong>Class X (ICSE) aggregate:</strong> 97% </p>
+            <p><strong>Class XII (ISC) aggregate:</strong> 96%</p>
+        </div>
+        <div class="skill-card">
+            <h3>Computer-related</h3>
+            <p>I am a tech-enthusiast and I enjoy coding.</p>
+            <p><strong>Languages:</strong><br> HTML <br> CSS <br> JavaScript <br> JAVA C <br> C++ <br> Python </p>
+        </div>
+        <div class="skill-card">
+            <h3>Co-curricular Activities</h3>
+            <p>I am a very creative person and love exploring new activities and hobbies</p>
+            <p><strong>Things I Do:</strong> <br>Read books<br> Dance <br> Sing <br> Spend time with nature </p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aishwarya S. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
